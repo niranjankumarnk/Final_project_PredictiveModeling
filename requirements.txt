@@ -4,4 +4,4 @@ matplotlib
 seaborn
 scikit-learn
 imblearn
-lazypredict==0.2.12
+pickle
