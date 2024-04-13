@@ -1,0 +1,108 @@
+Complete Report: A detailed report in PDF format is required, covering the methodology, findings, and conclusions of your project. The report should be well-organized, clearly written, and include any necessary references or citations.
+
+1. Load the required libraries.
+2. Load the dataset
+3. Clean the data , check for missing values and duplicates.
+		- There are some string value in integers so eliminated.
+		- There is no duplicates
+4. Perform EDA.
+		- Visualized Univariate, Bivaraite and multivariate plots .
+		- The data is skewed and has extreme outliers.
+5. Data Preprocessing
+		1. Handling Missing values  - Imputed the mean and mode for the attributes.
+		2. Handling Outliers - By visualizing the box plot, we can see that there are some outliers, we try to remove this. 
+Data points beyond the 99th percentile (upper quantile) or below the 1st percentile (lower quantile) are typically considered outliers.
+		3. Feature engineering - First, we converted the nutrients in low and high bin( 0 - low & 1- High)
+				       - Next, We created a Calorie density - it refers to the amount of calories (energy) contained in a given volume or weight of food. It is typically measured in calories per gram (cal/g) or calories per milliliter (cal/mL). Foods with higher calorie density provide more calories per unit of weight or volume, while foods with lower calorie density provide fewer calories for the same amount of weight or volume.
+				       -  also , created a Total Nutrient Content by adding all nutrients. 
+				       - Then we considering, the some amount of saturated fat and Sugar in Total fat and Carbohydrates.
+				       - Then, we encoding the category column using get dummies, so we can create additional features.
+		4.Spliting the data into X, independent variables or explanatory variable and y as ouyput variable or dependent variable.
+		5. Scaled the X data using Standard scaler because of different ranges of values.
+6. Feature Selection
+		1. X has some constant variable in some column, so we use Variance thresholdand set threshold to 0, to remove the constant columns.
+		2. We assumed to select best 20 columns, using SelectKBest & f_classif library and select top 20 best features from the data.
+
+7. Model selection
+		1. Split the X preprocessed data into test and train data for building the model with test size of 20 % and train size of 80%. 
+		2. First used, Logistic Regression model because of its simple and efficient to use. We trained and predicted but accuracy is low which is 80 %.
+		3. Next, we used Decision tree model, trained and predicted the outcome. The accuracy is 99.6%, and used evaluation metrics and cross validation score to decide the accuracy. 
+		4. Then, Random forest classifier model, trained and predicted the outcome. The accuracy is 99.3%, and used evaluation metrics and cross validation score to decide the accuracy. 
+		5 Finally, we tried Gradient boosting classifier, trained and predicted the outcome. The accuracy is 100%,& evaluation metrics precision , recall and f1 score is also 100%,  cross validation score to decide the accuracy.
+
+8. Hyperparameter tuning
+		We getting good result with previous one, so hyperparameter tuning is not required.
+
+10. Prediction
+		While predicted with actual test data, we getting 100% accuracy in Gradient boosting classifier model and F1 score is 100. 
+
+
+
+Project Report: Predictive Modeling
+
+1. Introduction
+
+Brief overview of the project goals and objectives.
+
+2. Methodology
+
+2.1. Data Preparation
+
+Loading Libraries: Describe the libraries used for data manipulation, visualization, and modeling.
+
+Data Loading: Explain how the dataset was loaded into the project environment.
+
+Data Cleaning: Detail the steps taken to clean the data, including handling missing values, converting string values to integers, and removing duplicates.
+
+2.2. Exploratory Data Analysis (EDA)
+
+Univariate Analysis: Summary of visualizations used to explore individual variables.
+
+Bivariate Analysis: Explanation of visualizations used to analyze relationships between pairs of variables.
+
+Multivariate Analysis: Description of visualizations used to explore interactions between multiple variables.
+
+Observations: Insights gained from the EDA process, including data skewness and outlier detection.
+
+2.3. Data Preprocessing
+
+Handling Missing Values: Explanation of how missing values were imputed using mean and mode.
+
+Handling Outliers: Description of outlier removal using the 99th percentile approach.
+
+Feature Engineering: Details on creating new features such as calorie density and total nutrient content.
+
+Feature Encoding: Explanation of how categorical variables were encoded using one-hot encoding.
+
+Data Scaling: Description of standard scaling applied to the independent variables.
+
+2.4. Feature Selection
+
+Variance Thresholding: Explanation of removing constant columns using variance thresholding.
+
+Feature Selection: Details on selecting the top 20 features using SelectKBest and ANOVA F-value scoring.
+
+3. Model Selection
+Data Splitting: Explanation of splitting the preprocessed data into training and testing sets.
+
+Model Training and Evaluation: Description of training logistic regression, decision tree, random forest, and gradient boosting classifier models. Include accuracy, precision, recall, F1 score, and cross-validation results for each model.
+
+4. Hyperparameter Tuning
+
+Explanation: Discuss whether hyperparameter tuning was performed and its necessity based on model performance.(Not used)
+
+5. Prediction
+
+Outcome: Summary of prediction results on the test dataset, highlighting the model with the highest accuracy (Gradient Boosting Classifier).
+
+6. Conclusion
+
+Summary: Recap of the project objectives and methodologies.
+
+Findings: Overview of key findings and insights gained from the analysis.
+
+Recommendations: Suggestions for further analysis or improvements in predictive modeling techniques.
+
+7. References
+
+List of any external resources, libraries, or datasets referenced in the project.		
