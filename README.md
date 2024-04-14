@@ -2,13 +2,13 @@
 
 1.	Introduction
 2.	Methodology
-  2.1.	Data Preparation
-  2.2.	Exploratory Data Analysis (EDA)
-  2.3.	Data Preprocessing
-  2.4.	Feature Selection
+  * Data Preparation
+	* Exploratory Data Analysis (EDA)
+  * Data Preprocessing
+  * Feature Selection
 3.	Model Selection
-  3.1.	Data Splitting
-  3.2.	Model Training and Evaluation
+  * Data Splitting
+  * Model Training and Evaluation
 4.	Hyperparameter Tuning
 5.	Prediction
 6.	Conclusion
@@ -17,21 +17,26 @@
 
 
 
-1.	Introduction
+# 1.	Introduction
+
 The integration of machine learning in nutritional science can provide significant insights into the relationships between dietary patterns and health outcomes. The project aims to build a predictive model for a recipe website that classifies food items into three nutritional categories: "Nourishing", "Indulgent", and "Balanced". This classification is based on various nutritional parameters such as protein, fiber, saturated fat, sugar, and caloric content. The objective is to leverage this classification to recommend healthier food choices to users. 
-2.	Methodology
-2.1.	Data Preparation
-Loading Libraries:
-	Pandas: Used for its powerful data manipulation capabilities that simplify data cleaning, transformation, and analysis.
-	NumPy: Essential for handling numerical operations especially in data with complex calculations.
-	Matplotlib and Seaborn: These libraries are pivotal for data visualization, offering a wide range of plotting tools that help in making comprehensive graphs and charts.
-	Scikit-learn: This library is fundamental for implementing machine learning algorithms, providing tools for data splitting, model building, and model evaluation.
 
-Data Loading: The given train dataset was loaded for the project. The dataset is a comprehensive collection of nutritional metrics and food categories, compiled into a CSV file format which allows for easy access and manipulation using data analysis tools. 
+# 2.	Methodology
+## * Data Preparation
+##### Loading Libraries:
 
-Data Cleaning: The following steps were meticulously carried out:
-	Type Conversion: Correcting data types, such as converting strings with units in numerical columns to proper numeric types.
-	Duplicate Removal: Ensuring the uniqueness of data entries to maintain analytical integrity by removing duplicate rows.
+1. **Pandas**: Used for its powerful data manipulation capabilities that simplify data cleaning, transformation, and analysis.
+2. **NumPy**: Essential for handling numerical operations especially in data with complex calculations.
+3. **Matplotlib and Seaborn**: These libraries are pivotal for data visualization, offering a wide range of plotting tools that help in making comprehensive graphs and charts.
+4. **Scikit-learn**: This library is fundamental for implementing machine learning algorithms, providing tools for data splitting, model building, and model evaluation.
+
+## * Data Loading: 
+The given train dataset was loaded for the project. The dataset is a comprehensive collection of nutritional metrics and food categories, compiled into a CSV file format which allows for easy access and manipulation using data analysis tools. 
+
+## * Data Cleaning:
+The following steps were meticulously carried out:
+* Type Conversion: Correcting data types, such as converting strings with units in numerical columns to proper numeric types.
+* Duplicate Removal: Ensuring the uniqueness of data entries to maintain analytical integrity by removing duplicate rows.
 
 2.2.	Exploratory Data Analysis (EDA)
 
