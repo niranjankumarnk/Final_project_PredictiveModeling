@@ -2,13 +2,13 @@
 
 1.	Introduction
 2.	Methodology
-2.1.	Data Preparation
-2.2.	Exploratory Data Analysis (EDA)
-2.3.	Data Preprocessing
-2.4.	Feature Selection
+  2.1.	Data Preparation
+  2.2.	Exploratory Data Analysis (EDA)
+  2.3.	Data Preprocessing
+  2.4.	Feature Selection
 3.	Model Selection
-3.1.	Data Splitting
-3.2.	Model Training and Evaluation
+  3.1.	Data Splitting
+  3.2.	Model Training and Evaluation
 4.	Hyperparameter Tuning
 5.	Prediction
 6.	Conclusion
